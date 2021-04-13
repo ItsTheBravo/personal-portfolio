@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="script.js"></script>
 </head>
 <header>
     <nav class="menu">
         <ul>
-          <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
@@ -21,13 +21,14 @@
         <h2>and I am a Web Developer</h2>
     </section>
     <section id="button-container">
-        <button>HTML5</button>
-        <button>CSS3</button>
-        <button>Javascript</button>
-        <button>Git</button>
+        <button onclick="openTech('HTML5')">HTML5</button>
+        <button onclick="openTech('CSS3')">CSS3</button>
+        <button onclick="openTech('Javascript')">Javascript</button>
+        <button onclick="openTech('Git')">Git</button>
     </section>
+
     <section id="tech-container">
-        <article>
+        <article id="HTML5" class="tech"style="display:none">
             <h3>HTML5</h3>
             <p>Lorem ipsum dolor sit amet, 
                 consectetur adipiscing elit, 
@@ -44,7 +45,7 @@
                  mollit anim id est laborum.
             </p>
         </article>
-        <article>
+        <article id="CSS3" class="tech" style="display:none">
             <h3>CSS3</h3>
             <p>Lorem ipsum dolor sit amet, 
                 consectetur adipiscing elit, 
@@ -61,7 +62,7 @@
                  mollit anim id est laborum.
             </p>
         </article>
-        <article>
+        <article id="Javascript" class="tech" style="display:none">
             <h3>Javascript</h3>
             <p>Lorem ipsum dolor sit amet, 
                 consectetur adipiscing elit, 
@@ -78,7 +79,7 @@
                  mollit anim id est laborum.
             </p>
         </article>
-        <article>
+        <article id="Git" class="tech" style="display:none">
             <h3>Git</h3>
             <p>Lorem ipsum dolor sit amet, 
                 consectetur adipiscing elit, 
