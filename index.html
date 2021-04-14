@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <script type="text/javascript" src="script.js"></script>
+    <script src="https://kit.fontawesome.com/929757e802.js" crossorigin="anonymous"></script>
 </head>
 <header>
     <nav class="menu">
@@ -20,15 +21,17 @@
         <h1>My Name is John-Paul McGrath</h1>
         <h2>and I am a Web Developer</h2>
     </section>
+    <h2 id="heading2">Here's a little bit on some of the technologies I know:</h2>
     <section id="button-container">
-        <button onclick="openTech('HTML5')">HTML5</button>
-        <button onclick="openTech('CSS3')">CSS3</button>
-        <button onclick="openTech('Javascript')">Javascript</button>
-        <button onclick="openTech('Git')">Git</button>
+        <button class="btn active" onclick="openTech('HTML5')"><i class=" fab fa-html5"></i></button>
+        <button class="btn" onclick="openTech('CSS3')"><i class="fab fa-css3-alt"></i></button>
+        <button class="btn" onclick="openTech('Javascript')"><i class="fab fa-js-square"></i></button>
+        <button class="btn" onclick="openTech('Git')"><i class="fab fa-git"></i></button>
     </section>
 
+
     <section id="tech-container">
-        <article id="HTML5" class="tech"style="display:none">
+        <article id="HTML5" class="tech">
             <h3>HTML5</h3>
             <p>Lorem ipsum dolor sit amet, 
                 consectetur adipiscing elit, 
@@ -100,6 +103,7 @@
     <section>
         <h2>My Projects</h2>
         <h3>Here are some of my recent projects that I hope you will enjoy!</h3>
+        <div id="card-container">
         <div class="card">
             <img src="#" alt="">
             <h3>Project Title</h3>
@@ -124,6 +128,7 @@
             <p>About the project</p>
             <p>Project Link</p>
         </div>
+    </div>
     </section>
     <section>
         <h2>Like what you see? Here's where to find me:</h2>

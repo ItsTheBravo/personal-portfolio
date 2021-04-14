@@ -1,5 +1,4 @@
-
-  function openTech(techName) {
+function openTech(techName) {
     var i;
     var x = document.getElementsByClassName("tech");
     for (i = 0; i < x.length; i++) {
@@ -7,3 +6,5 @@
     }
     document.getElementById(techName).style.display = "block";  
   }
+
+
