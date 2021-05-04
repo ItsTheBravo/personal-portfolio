@@ -1,6 +1,7 @@
 html {
     font-size: 16px;
     color: #DEE2E3;
+    font-family: 'Telex', sans-serif;
 }
 
 body {
@@ -44,11 +45,14 @@ ul li a {
   }
   ul li a:hover {
     color: #95a5a6;
+    cursor: pointer;
   }
   ul li a:hover::after {
     transform: scaleX(1);
     transform-origin: left;
   }
+
+  
 
   #banner {
     display: flex;
@@ -89,6 +93,7 @@ ul li a {
         color: #3E2345;
         padding: 1rem;
         animation: 1s ease-out 0s 1 slideInFromLeft;
+        font-family: 'Roboto', sans-serif;
     }
 
     #banner h2 {
@@ -97,6 +102,7 @@ ul li a {
         color: #3E2345;
         padding: 2rem;
         animation: 2s ease-in 0s 1 fadeIn;
+        font-family: 'Source Sans Pro', sans-serif;
     }
 
     button {
@@ -116,11 +122,16 @@ ul li a {
 
     button:hover {
         background-color: #585B7A;
+        cursor: pointer;
     }
 
     button:active {
       background-color: #585B7A;
       transform: translate(2px,2px);
+    }
+
+    .btn2 {
+      padding: 30px 35px;
     }
 
     #button-container {
@@ -144,6 +155,7 @@ ul li a {
       color: #3E2345;
       padding: 2rem;
       animation: 0.5s ease-out 0s 1 fadeIn;
+      font-family: 'Source Sans Pro', sans-serif;
     }
 
     .tech p {
@@ -162,12 +174,119 @@ ul li a {
       justify-content: space-evenly;
     }
     .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
       transition: 0.3s;
       width: 30%;
+      height: 400px;
       margin: 5%;
-    
+      background-color: #dee2e3;
+      color: #3E2345;
+      border-radius: 6px;
     }
     .card:hover {
-      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      box-shadow: 0 16px 24px 0 rgba(0,0,0,0.2);
+    }
+
+    .card div {
+      background-color: #4461a6;
+      background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23dee2e3' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+      width: 90%;
+      margin: 0 2em;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      padding: 3rem 0;
+      border-radius: 6px;
+    }
+
+    .card h3 {
+      color: #DEE2E3;
+      text-shadow:  4px 4px 12px #000000;
+      font-family: 'Source Sans Pro', sans-serif;
+    }
+
+    .card p {
+      font-size: 1.2em;
+      padding: 1em;
+    }
+
+    #projects h2 {
+      font-size: 3rem;
+      text-align: center;
+      margin: 1rem;
+      margin-top: 3rem;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    #projects h3 {
+      font-size: 2rem;
+      margin: 1rem;
+      text-align: center;
+      font-weight: lighter;
+      font-style: italic;
+      font-family: 'Source Sans Pro', sans-serif;
+    }
+
+    #contact h2 {
+      font-size: 3rem;
+      text-align: center;
+      margin: 1rem;
+      margin-top: 3rem;
+      font-family: 'Roboto', sans-serif;
+    }
+
+
+    .fa {
+      vertical-align: middle;
+      padding: 15px;
+      margin: 20px;
+      width: 50px;
+      height: 50px;
+      font-size: 30px;
+      text-align: center;
+      text-decoration: none;
+    }
+    
+    .fa:hover {
+      opacity: 0.7;
+    }
+
+    .fa-facebook {
+      vertical-align: middle;
+      color: #3B5998;
+    }
+    
+    .fa-github {
+      color: #000000;
+    }
+
+    .fa-linkedin {
+      color: #3B59DD;
+    }
+
+    #contact-container {
+      display: flex;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+      margin: 0 auto;
+    }
+
+    #contact-container a {
+      background-color: #DEE2E3;
+      width: 20%;
+      margin: 0 auto;
+      align-items: center;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      border-radius: 6px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 2rem;
+      padding: 2rem;
+      background-color: #4461A6;
     }
